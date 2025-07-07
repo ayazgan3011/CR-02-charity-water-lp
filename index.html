@@ -3,36 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>charity: water - End the Water Crisis</title>
+  <!-- Link to the CSS file -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Proxima Nova is a paid font. For preview, we use Montserrat as a close free alternative. -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- In your CSS, keep 'Proxima Nova' as the main font for when you add it to your project. -->
 </head>
 <body>
-  <!-- Header with logo and brand name -->
+  <!-- Header section with logo and brand name -->
   <header class="header">
-    <!-- Replace the src with your actual logo image -->
+    <!-- Logo image -->
     <img src="img/cw_logo.png" alt="charity: water logo" class="logo">
     <span class="brand-name">charity: water</span>
   </header>
 
   <!-- Main content area -->
-  <main class="main-content">
-    <!-- Left side: image -->
-    <div class="left-side">
-      <!-- Replace the src with your actual image -->
-      <img src="img/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2Y2ZWNjMDNiN2RmY2FjNDk0ZmI2OTBlMDcyZDI4ODY1NDY3YTBiZTE0ZWFlMTM2ZGZjMzg3Y2QwZDI1ZGFkNGEvY3dfU2VsZWN0c185eDE2XzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo2MDAsImhlaWdodC.jpg" alt="Person carrying water" class="main-image">
-    </div>
-    <!-- Right side: text and call to action -->
-    <div class="right-side">
-      <h1>Be the Generation That<br>Ends the Water Crisis</h1>
-      <p>
-        Your <a href="#">voice</a>, your <a href="#">action</a>, your <a href="#">impact</a>—help bring clean water to communities in need and be part of lasting global change
-      </p>
-      <div class="cta">
-        <!-- Simple arrow using text, you can replace with an image if you like -->
-        <span class="arrow">&#x27A4;&#x27A4;&#x27A4;</span>
-        Join the cause now and see how YOU can help!
-        <span class="arrow">&#x27A4;&#x27A4;&#x27A4;</span>
+  <main class="main-section">
+    <!-- Left yellow section with image -->
+    <section class="left-yellow">
+      <!-- Main image of lady with can -->
+      <img src="img/ladywithcan.jpg" alt="Woman carrying water can" class="main-image">
+    </section>
+    <!-- Right blue section with text and call to action -->
+    <section class="right-blue">
+      <div class="right-content">
+        <!-- Main header -->
+        <h1>Be the Generation That Ends the Water Crisis</h1>
+        <!-- Subheader -->
+        <p class="subheader">
+          Your voice, your action, your impact—help bring clean water to communities in need and be part of lasting global change
+        </p>
+        <!-- Call to action sign-up form -->
+        <form class="cta-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email">
+          <button type="submit">Join the cause now and see how <span class="you">YOU</span> can help!</button>
+        </form>
       </div>
-    </div>
+    </section>
   </main>
 </body>
 </html>
